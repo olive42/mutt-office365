@@ -20,7 +20,10 @@ set spoolfile= +INBOX
 set postponed= +$my_drafts_noquote
 set record = +$my_sent_noquote
 set trash = +$my_trash_noquote
-mailboxes
+
+# This is to be able to select a folder name with spaces in it.
+bind editor <space> noop
+mailboxes +INBOX/Alerts "+INBOX/HR & Misc Info" +INBOX/Devtools +INBOX/Training
 
 set imap_check_subscribed="yes"
 set imap_list_subscribed="yes"
@@ -52,14 +55,14 @@ set tmpdir="~/.mutt/tmp"
 # Text view first
 set pager_stop="yes"
 set smart_wrap="yes"
-alternative_order text/plain
+alternative_order text/plain text/enriched text/html
 auto_view text/html
 set reverse_name=yes
 set reverse_realname=yes
 
 # Text editor
 #set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
-set editor="vim"
+set editor="emacsclient -t -a vim"
 
 # Adress book handling
 set sort_alias=alias
