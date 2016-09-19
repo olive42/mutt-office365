@@ -1,7 +1,6 @@
 # User config
-set my_realname="John Smith"
-set my_username="john.smith"
-set my_domain="example.com"
-set my_password="This password is secure"
-set my_lang="en_US"
-
+set my_realname="Olivier Tharan"
+set my_username="o.tharan"
+set my_domain="criteo.com"
+###set my_password="This password is secure"
+set my_lang="fr_FR"
