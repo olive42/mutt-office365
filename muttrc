@@ -79,6 +79,8 @@ set sort_aux="last-date-received"
 unset collapse_unread
 set index_format=" %?M?   ↳&%4C?   %Z      %D     %-15.15n    %s"
 
+set delete=yes
+
 ## Key bindings
 
 # Mailboxes
