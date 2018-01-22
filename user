@@ -2,5 +2,5 @@
 set my_realname="Olivier Tharan"
 set my_username="o.tharan"
 set my_domain="criteo.com"
-###set my_password="This password is secure"
+set my_password=`gpg -q -d ~/.authinfo.gpg | awk -F\" '/993/ {print $2}'`
 set my_lang="en_US"
