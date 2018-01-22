@@ -1,2 +1,1 @@
-subscribe sre-reading-group@lists.criteo.net
-subscribe Criteo.FR.Internal@criteo.com
+source "~/.mutt/mailing_lists.local"
