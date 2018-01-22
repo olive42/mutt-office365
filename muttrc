@@ -39,7 +39,7 @@ set ssl_use_sslv3=yes
 # SMTP config
 set realname = $my_realname
 set from = "$my_username@$my_domain"
-set smtp_pass = $my_password
+set smtp_pass = `gpg -q -d ~/.authinfo.gpg | awk -F\" '/587/ {print $2}'`
 set hostname = $my_domain
 set smtp_url = "smtp://$my_username@$my_domain@outlook.office365.com:587/"
 set ssl_force_tls = yes
