@@ -24,7 +24,7 @@ set trash = +$my_trash_noquote
 
 # This is to be able to select a folder name with spaces in it.
 bind editor <space> noop
-mailboxes +INBOX/Alerts +INBOX/cr-cookbooks +INBOX/cr-repositories +INBOX/cr-rubygems
+mailboxes +INBOX/Alerts +INBOX/CodeReviews
 # "+INBOX/HR & Misc Info" +INBOX/Devtools +INBOX/Training
 
 # set imap_check_subscribed="yes"
