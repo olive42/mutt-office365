@@ -121,6 +121,9 @@ bind    pager   n           next-entry
 bind    pager   p           previous-entry
 bind    pager   w           previous-page
 
+macro   index,pager \cb "<pipe-message>urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro   attach,compose \cb "<pipe-message>urlscan<Enter>" "call urlscan to extract URLs out of a message"
+
 # Colors
 
 # Copy the file from a checked out clone of
