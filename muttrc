@@ -85,14 +85,14 @@ set delete=yes
 
 # Neomutt specific
 # https://www.neomutt.org/feature/forgotten-attachment
-set abort_noattach = ask-yes
-set attach_keyword = "\\<(attach(|ed|ments?)|attaché|attachés|attache|attachons|joint|jointe|joints|jointes|joins|joignons)\\>"
+#set abort_noattach = ask-yes
+#set attach_keyword = "\\<(attach(|ed|ments?)|attaché|attachés|attache|attachons|joint|jointe|joints|jointes|joins|joignons)\\>"
 
 ## Key bindings
 
 # Mailboxes
 bind    index   G  imap-fetch-mail
-bind    index   g noop
+bind    index   g  noop
 macro   index   gi "<change-folder>=INBOX<enter>"       "Go to Inbox"
 macro   index   gs "<change-folder>=$my_sent<enter>"    "Go to Sent"
 macro   index   gd "<change-folder>=$my_drafts<enter>"  "Go to Drafts"
@@ -132,7 +132,7 @@ macro   attach,compose \cb "<pipe-message>urlscan<Enter>" "call urlscan to extra
 source "~/.mutt/mutt-colors-solarized-light-256.muttrc"
 
 # https://www.neomutt.org/feature/progress
-color   progress    white red
+# color   progress    white red
 
 # For better looks
 #set markers=no # don't put '+' at the beginning of wrapped lines
